@@ -30,3 +30,12 @@ function whileLoop(number) {
     }
   }
 }
+
+function doWhileLoop(integer) {
+  do {
+    function incrementVariable() {
+  i = i + 1;
+  return i;
+}
+  } while (incrementVariable() < integer);
+}
