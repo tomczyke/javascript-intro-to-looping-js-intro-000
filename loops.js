@@ -30,12 +30,16 @@ function whileLoop(number) {
     }
   }
 }
-var i = 0
+
+var i = 0;
+
+function incrementVariable() {
+  i = i + 1;
+  return i;
+}
+
 function doWhileLoop(integer) {
   do {
-    function incrementVariable() {
-      i = i + 1;
-      return i;
-    }
-  } while (incrementVariable() < integer);
+    console.log("I run once regardless.");
+  } while incrementVariable() < integer;
 }
